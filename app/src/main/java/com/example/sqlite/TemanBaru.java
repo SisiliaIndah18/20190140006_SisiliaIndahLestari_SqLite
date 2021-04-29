@@ -27,11 +27,12 @@ public class TemanBaru extends AppCompatActivity {
         tTelpon = (TextInputEditText)findViewById(R.id.tietTelpon);
         simpanBtn = (Button)findViewById(R.id.buttonSave);
 
+
         simpanBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if (tNama.getText().toString().equals("")||tTelpon.getText().toString().equals("")){
-                    Toast.makeText(getApplicationContext(),"Data belum komplit!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Data Belum Terisi Semua !", Toast.LENGTH_SHORT).show();
                 }else{
                     nm = tNama.getText().toString();
                     tlp = tTelpon.getText().toString();

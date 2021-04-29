@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private TemanAdapter adapter;
     private ArrayList<Teman> temanArrayList;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         fab = findViewById(R.id.floatingBtn);
+
         BacaData();
         adapter = new TemanAdapter(temanArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
