@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SqLite</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
+    <string name="detailkontak">Detail Kontak</string>
 </resources>
