@@ -56,7 +56,7 @@ public class DBController extends SQLiteOpenHelper {
     }
 
     public void updateData(HashMap<String, String> queryValues){
-        SQLiteDatabase basisdata = this.getReadableDatabase();
+        SQLiteDatabase basisdata = this.getWritableDatabase();
         ContentValues nilai = new ContentValues();
         nilai.put("nama", queryValues.get("nama"));
         nilai.put("telpon", queryValues.get("telpon"));
